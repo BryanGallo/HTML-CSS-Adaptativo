@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/* cabecera*/
+#Cabecera {
+  background-color: #5b7989;
+  color:white;
+  text-shadow: 2px #02010a;
+  -webkit-border-radius:10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Titulo {
+    width: 50%;
+
+}
+
+.Titulo h1 {
+    font-family: 'Dancing Script', cursive;
+
+}
+.Menu {
+  width:50%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: White;
+  margin-right: 5px;
+  text-align: right;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+/* Adaptative Cabecera*/
+@media (max-width:600px) {
+  #Cabecera{
+    display: flex;
+    flex-direction: column;
+  }
+
+    .Titulo{
+      width: 100%;
+      text-align: center;
+    }
+
+    .Menu{
+      width: 100%;
+      text-align: center;
+    }
+}
+
+/* ImagenCentral*/
+#ImagenCentral{
+  background-color: #82c3a6;
+  width: 100%;
+}
+
+.Imagen {
+  width:100%;
+  text-align: center;
+}
+
+.Imagen img{
+  width: 65%;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Adaptative ImagenCentral*/
+
+/* ImagenSecundaria*/
+#ImagenSecundaria{
+  display: flex;
+  flex-direction: row;
+  background-color: #d5c75f;
+  width: 100%;
+}
+
+.Imagen1{
+  width: 50%;
+  text-align: center;
+}
+
+.Imagen1 figure img {
+  width: 60%;
+  border: 2px solid black;
+  /* Efectos ImagenSecundaria Imagen1*/
+  transition-property:transform:rotate;
+  transition-duration: 3s;
+}
+
+.Imagen1 figure img:hover{
+  transform: rotate(10deg);
+  /* Efectos Finaliza*/
+}
+
+.Imagen1 figcaption{
+  color:white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+
+.Imagen2{
+    width: 50%;
+    text-align: center;
+}
+
+.Imagen2 figure img{
+  width:60%;
+  /* Efectos ImagenSecundaria Imagen2*/
+  border: 2px solid black;
+  transition-property: transform: translate ;
+  transition-duration: 3s;
+}
+
+.Imagen2 figure img:hover{
+  transform: translate(5px,-20px);
+  /* Efectos Finaliza*/
+}
+
+.Imagen2  figcaption{
+  color:white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+
+/* Adaptative ImagenSecundaria*/
+@media (max-width:600px){
+  #ImagenSecundaria{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:600px) {
+  .Imagen1 {
+    width: 100%;
+  }
+  .Imagen1 figcaption{
+    font-size: 14px;
+  }
+  .Imagen1 figure img {
+    width: 90%;
+  }
+
+  .Imagen2{
+    width: 100%;
+  }
+  .Imagen2 figcaption{
+    font-size: 14px;
+  }
+  .Imagen2 figure img{
+    width: 90%;
+  }
+
+}
+
+/* Piedepagina*/
+#Piedepagina{
+  display: flex;
+  flex-direction: row;
+  background-color: #C6d5c5;
+  webkit-border-radius:0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.Contacto{
+  width: 25%;
+  text-align: center;
+}
+
+.Contacto a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+  h1{
+    font-family: 'Dancing Script', cursive;
+
+  }
+ a,p{
+  font-family: 'Dancing Script', cursive;;
+  font-size: 20px;
+}
+
+img{
+  width: 5%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.Terminos{
+  width: 25%;
+  text-align: center;
+}
+
+.Redes{
+  width: 25%;
+  text-align: center;
+}
+
+.Redes a{
+  text-decoration: none;
+  color: black;
+}
+
+.Derechos{
+  width: 25%;
+  text-align: center;
+}
+
+/* Adaptative Piedepagina*/
+@media (max-width:600px) {
+  #Piedepagina{
+    display: flex;
+    flex-direction: column;
+  }
+  .Contacto{
+    width:100%;
+    text-align:center;
+  }
+
+  .Terminos{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Redes{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Derechos{
+    width: 100%;
+    text-align: center;
+  }
+
+}

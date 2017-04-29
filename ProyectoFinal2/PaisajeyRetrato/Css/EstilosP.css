@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+/* Cabecera*/
+#Cabecera {
+  background-color: #5b7989;
+  color:white;
+  text-shadow: 2px #02010a;
+  -webkit-border-radius:10px 10px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Titulo {
+  width: 50%;
+}
+
+.Menu {
+  width:50%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: White;
+  margin-right: 5px;
+  text-align: right;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+/* Adaptative Cabecera*/
+@media (max-width:600px) {
+  #Cabecera{
+    display: flex;
+    flex-direction: column;
+  }
+
+    .Titulo{
+      width: 100%;
+      text-align: center;
+    }
+
+    .Menu{
+      width: 100%;
+      text-align: center;
+    }
+}
+
+/* Paisajes*/
+#Paisajes{
+  background-color: #d5c75f;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Barco{
+  width:30%;
+  text-align:center;
+}
+
+.Barco img{
+  width:70%;
+  text-align:center;
+  margin: 10px;
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+.Barco2{
+  width:30%;
+  text-align:center;
+}
+.Barco2 img{
+  width:70%;
+  text-align:center;
+  margin: 10px;
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+.Barco3{
+  width:30%;
+  text-align:center;
+}
+.Barco3 img{
+  width:70%;
+  text-align:center;
+    margin: 10px;
+}
+/* Adaptativo Paisajes*/
+@media (max-width:600px) {
+  #Paisajes{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Barco{
+    width:100%;
+    text-align:center;
+  }
+
+  .Barco img{
+    width:80%;
+    text-align:center;
+    margin: 10px;
+  }
+
+  .Barco2{
+    width:100%;
+    text-align:center;
+  }
+  .Barco2 img{
+    width:80%;
+    text-align:center;
+    margin: 10px;
+  }
+
+  .Barco3{
+    width:100%;
+    text-align:center;
+  }
+  .Barco3 img{
+    width:80%;
+    text-align:center;
+    margin: 10px;
+    -webkit-filter:sepia(90%);
+    filter:sepia(90%);
+  }
+
+}
+
+/* Paisajes2*/
+#Paisajes2{
+  background-color: #d5c75f;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.Luna{
+  width:30%;
+  text-align:center;
+}
+
+.Luna img{
+  width:70%;
+  text-align:center;
+  margin: 10px;
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+.Luna2{
+  width:30%;
+  text-align:center;
+}
+.Luna2 img{
+  width:70%;
+  text-align:center;
+  margin: 10px;
+}
+
+.Luna3{
+  width:30%;
+  text-align:center;
+}
+.Luna3 img{
+  width:70%;
+  text-align:center;
+  margin: 10px;
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+/* Adaptativo Paisajes2*/
+@media (max-width:600px) {
+  #Paisajes2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Luna{
+    width:100%;
+    text-align:center;
+  }
+
+  .Luna img{
+    width:80%;
+    text-align:center;
+    margin: 10px;
+  }
+
+  .Luna2{
+    width:100%;
+    text-align:center;
+  }
+  .Luna2 img{
+    width:80%;
+    text-align:center;
+      margin: 10px;
+  }
+
+  .Luna3{
+    width:100%;
+    text-align:center;
+  }
+  .Luna3 img{
+    width:80%;
+    text-align:center;
+      margin: 10px;
+  }
+
+}
+
+/* Piedepagina*/
+#Piedepagina{
+  display: flex;
+  flex-direction: row;
+  background-color: #C6d5c5;
+  webkit-border-radius:0px 0px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.Contacto{
+  width: 25%;
+  text-align: center;
+}
+
+.Contacto a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+  h1{
+    font-family: 'Dancing Script', cursive;
+
+  }
+ a,p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+
+img{
+  width: 5%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.Terminos{
+  width: 25%;
+  text-align: center;
+}
+
+.Redes{
+  width: 25%;
+  text-align: center;
+}
+
+.Redes a{
+  text-decoration: none;
+  color: black;
+}
+
+.Derechos{
+  width: 25%;
+  text-align: center;
+}
+
+/* Adaptative Piedepagina*/
+@media (max-width:600px) {
+  #Piedepagina{
+    display: flex;
+    flex-direction: column;
+  }
+  .Contacto{
+    width:100%;
+    text-align:center;
+  }
+
+  .Terminos{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Redes{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Derechos{
+    width: 100%;
+    text-align: center;
+  }
+
+}
